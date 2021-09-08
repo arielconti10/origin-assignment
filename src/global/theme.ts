@@ -10,6 +10,10 @@ const theme = {
     shape: '#FFFFFF',
     background: '#F4F8FA',
   },
+  fonts: {
+    regular: 'Work Sans',
+    alternative: 'Rubik',
+  },
 };
 
 export default theme;
