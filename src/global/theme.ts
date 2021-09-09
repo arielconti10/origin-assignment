@@ -4,6 +4,7 @@ const theme = {
     secondary: '#0079FF',
 
     blueGray50: '#E9EEF2',
+    blueGray400: '#708797',
     blueGray600: '#4D6475',
     blueGray900: '#1E2A32',
 
