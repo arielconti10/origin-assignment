@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import logo from '../../assets/images/logo.svg';
 import house from '../../assets/icons/buy-a-house.svg';
@@ -19,7 +19,6 @@ import {
   Fields,
   InputContainer,
   InputLabel,
-  Input,
   AmountCard,
   AmountContainer,
   AmountText,
@@ -27,9 +26,13 @@ import {
   AmountDetail,
   AmountDetailText,
   Button,
+  MonthInput,
 } from './styles';
+import { MoneyInput } from '../../components/MoneyInput';
 
 export function Home(): JSX.Element {
+  const [value, onChange] = useState(new Date());
+
   return (
     <Container>
       <Header>
@@ -51,14 +54,10 @@ export function Home(): JSX.Element {
 
         <Form>
           <Fields>
-            <InputContainer>
-              <InputLabel>Total Amount</InputLabel>
-              <Input placeholder="24,000" />
-            </InputContainer>
+            <MoneyInput />
 
             <InputContainer>
               <InputLabel>Reach Goal By</InputLabel>
-              <Input placeholder="October 2021" />
             </InputContainer>
           </Fields>
 

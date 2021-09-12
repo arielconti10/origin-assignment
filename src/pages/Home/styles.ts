@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import styled, { ThemeContext } from 'styled-components';
+import styled from 'styled-components';
+import Calendar from 'react-calendar';
 
 export const Container = styled.div`
   display: flex;
@@ -95,22 +96,6 @@ export const InputLabel = styled.label`
   color: ${({ theme }) => theme.colors.blueGray900};
 `;
 
-export const Input = styled.input`
-  font-family: ${({ theme }) => theme.fonts.alternative};
-  font-size: 24px;
-
-  border-radius: 4px;
-  border: 1px solid ${({ theme }) => theme.colors.blueGray50};
-
-  width: 100%;
-  padding: 14px 13px;
-  margin-top: 5px;
-
-  ::placeholder {
-    color: ${({ theme }) => theme.colors.blueGray600};
-  }
-`;
-
 export const AmountCard = styled.div`
   border-radius: 4px;
   border: 1px solid ${({ theme }) => theme.colors.blueGray50};
@@ -176,3 +161,5 @@ export const Button = styled.div`
   padding: 18px 0;
   margin-top: 50px;
 `;
+
+export const MonthInput = styled(Calendar)``;
