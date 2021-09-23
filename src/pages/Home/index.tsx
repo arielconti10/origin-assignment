@@ -29,6 +29,7 @@ import {
   MonthInput,
 } from './styles';
 import { MoneyInput } from '../../components/MoneyInput';
+import { MonthSelector } from '../../components/MonthSelector';
 
 export function Home(): JSX.Element {
   const [value, onChange] = useState(new Date());
@@ -56,9 +57,7 @@ export function Home(): JSX.Element {
           <Fields>
             <MoneyInput />
 
-            <InputContainer>
-              <InputLabel>Reach Goal By</InputLabel>
-            </InputContainer>
+            <MonthSelector />
           </Fields>
 
           <AmountCard>

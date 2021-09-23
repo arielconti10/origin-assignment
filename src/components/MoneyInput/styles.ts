@@ -13,6 +13,7 @@ export const InputContainer = styled.div`
 
   padding: 0;
   margin-top: 8px;
+  max-width: 272px;
 `;
 
 export const InputLabel = styled.p`
@@ -25,8 +26,8 @@ export const Input = styled(CurrencyInput)`
   font-family: ${({ theme }) => theme.fonts.alternative};
   font-size: 24px;
   border: 0;
-
-  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
 
   ::placeholder {
     color: ${({ theme }) => theme.colors.blueGray600};
@@ -38,5 +39,5 @@ export const Input = styled(CurrencyInput)`
 `;
 
 export const Icon = styled.img`
-  padding: 24px 12px;
+  padding: 16px 12px;
 `;
